@@ -1,0 +1,45 @@
+﻿@page
+@model TestWebApplicationHTTP.Pages.registration_confirmModel
+@{
+}
+
+<html>
+<div style="background-image: linear-gradient(to right, rgba(45,84,41,0.63), rgba(5,150,48,0.33));">
+    <img src="http://217.144.172.106/images/carparkinglogogreen-blue.png" alt="" data-image-width="1024" data-image-height="1024" style="width: 103px;height: 103px;">
+
+    <table width="100%" cellpadding="5" cellspacing="0" style="empty-cells: show;">
+        <tr>
+            <td>&nbsp;</td>
+            <td style="text-align: right;">Личный кабинет</td>
+            <td style="text-align: left;">Помощь</td>
+        </tr>
+        <tr>
+            <td style="width: 10%"> </td>
+            <td style="width: 70%">
+                <div style="color: #111111;background-color: #e5e5e5;display: flex;text-align: left;width: 800px;height: auto;border-radius: 10px !important;">
+                    <div style="flex: 1;max-width: 100%;transition-duration: inherit;padding: 30px;">
+                        <h3 style="font-weight: 400;font-size: 2.25rem;line-height: 1.2;margin-top: 0;margin-bottom: 0.5rem;font-family: Roboto,sans-serif;color: inherit;text-align: center;margin: 0 auto;">Код подтверждения:</h3>
+                        <div style="display: flex;color: #ffffff;background-color: #304937;text-align: left;min-height: 71px;width: 491px;height: auto;background-image: none;margin: 16px auto 0;border-radius: 10px !important;">
+                            <div style="flex: 1;max-width: 100%;transition-duration: inherit;padding-left: 30px;padding-right: 30px;">
+                                <h3 style="font-weight: 400;font-size: 2.25rem;line-height: 1.2;margin-bottom: 0.5rem;font-family: Roboto,sans-serif;color: inherit;text-align: center;margin: 14px auto 0;">@Model.UniqueCode</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td style="width: 10%"> </td>
+        </tr>
+        <tr>
+            <td style="width: 10%"> </td>
+            <td style="width: 70%">
+                <p style="font-size: 0.875rem;width: 800px;">
+                    Это письмо сформировано автоматически. Пожалуйста, не отвечайте на него. Вы получили это пиcьмо, потому что зарегистрировали аккаунт на сайте parkingcontrolcomplex.ru<br>
+                    <br>© 2023 Комплекс управления парковкой
+                </p>
+            </td>
+            <td style="width: 10%"> </td>
+        </tr>
+    </table>
+    <br>
+</div>
+</html>

@@ -1,0 +1,749 @@
+﻿@page
+@model TestWebApplicationHTTP.Pages.Places.IndexModel
+
+@{
+    ViewData["Title"] = "Редактирование загруженности";
+    ViewData["AuthSwitch"] = "Профиль";
+}
+
+<!DOCTYPE html>
+<html style="font-size: 14px;" lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/css/nicepage.css" media="screen">
+</head>
+<body class="u-body u-xl-mode" data-lang="ru">
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <button onclick="location.href='https://parkingcontrolcomplex.ru/users'" class="u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-radius u-btn-1">Редактирование учетных данных</button>
+                </td>
+                <td>
+                    <button onclick="location.href='https://parkingcontrolcomplex.ru/places'" class="u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-radius u-btn-1">Редактирование загруженности парковки</button>
+                </td>
+                <td>
+                    <button onclick="location.href='https://parkingcontrolcomplex.ru/сharts'" class="u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-radius u-btn-1">Статистика по парковке</button>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <section style="background-image: linear-gradient(rgba(5,150,48,0.33), rgba(5,150,48,0.33));">
+        <h3>Редактирование загруженности парковочных мест</h3>
+
+        <p>
+            <a asp-page="Create">Задать расстановку</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl1)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl2)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl3)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl4)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl5)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl6)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl7)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl8)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl9)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl10)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl11)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl12)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl13)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl14)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl15)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl16)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl17)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl18)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl19)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl20)
+                    </th>
+@*                     <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl21)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl22)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl23)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl24)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl25)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl26)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl27)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl28)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl29)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl30)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl31)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl32)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl33)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl34)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl35)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl36)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl37)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl38)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl39)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl40)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl41)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl42)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl43)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl44)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl45)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl46)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl47)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl48)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl49)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl50)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl51)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl52)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl53)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl54)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl55)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl56)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl57)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl58)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl59)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl60)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl61)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl62)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl63)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl64)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl65)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl66)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl67)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl68)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl69)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl70)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl71)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl72)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl73)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl74)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl75)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl76)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl77)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl78)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl79)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl80)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl81)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl82)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl83)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl84)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl85)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl86)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl87)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl88)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl89)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl90)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl91)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl92)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl93)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl94)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl95)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl96)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl97)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl98)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl99)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl100)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl101)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl102)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl103)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl104)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl105)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl106)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl107)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl108)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl109)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl110)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl111)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl112)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl113)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl114)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Place[0].Pl115)
+                    </th> *@
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Place)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl1)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl2)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl3)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl4)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl5)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl6)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl7)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl8)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl9)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl10)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl11)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl12)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl13)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl14)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl15)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl16)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl17)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl18)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl19)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl20)
+                        </td>
+@*                         <td>
+                            @Html.DisplayFor(modelItem => item.Pl21)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl22)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl23)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl24)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl25)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl26)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl27)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl28)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl29)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl30)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl31)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl32)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl33)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl34)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl35)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl36)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl37)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl38)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl39)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl40)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl41)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl42)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl43)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl44)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl45)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl46)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl47)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl48)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl49)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl50)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl51)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl52)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl53)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl54)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl55)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl56)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl57)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl58)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl59)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl60)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl61)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl62)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl63)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl64)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl65)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl66)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl67)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl68)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl69)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl70)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl71)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl72)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl73)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl74)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl75)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl76)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl77)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl78)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl79)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl80)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl81)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl82)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl83)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl84)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl85)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl86)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl87)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl88)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl89)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl90)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl91)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl92)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl93)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl94)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl95)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl96)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl97)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl98)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl99)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl100)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl101)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl102)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl103)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl104)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl105)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl106)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl107)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl108)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl109)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl110)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl111)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl112)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl113)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl114)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pl115)
+                        </td> *@
+                        <td>
+                            <a asp-page="./Edit" asp-route-id="@item.Id">Изменить</a> |
+                            <a asp-page="./Details" asp-route-id="@item.Id">Детали</a> |
+                            <a asp-page="./Delete" asp-route-id="@item.Id">Удалить</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

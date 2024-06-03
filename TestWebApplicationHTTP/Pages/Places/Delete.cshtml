@@ -1,0 +1,712 @@
+﻿@page
+@model TestWebApplicationHTTP.Pages.Places.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Place</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl3)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl3)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl4)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl4)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl5)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl5)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl6)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl6)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl7)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl7)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl8)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl8)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl9)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl9)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl10)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl10)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl11)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl11)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl12)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl12)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl13)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl13)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl14)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl14)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl15)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl15)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl16)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl16)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl17)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl17)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl18)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl18)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl19)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl19)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl20)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl20)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl21)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl21)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl22)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl22)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl23)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl23)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl24)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl24)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl25)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl25)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl26)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl26)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl27)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl27)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl28)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl28)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl29)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl29)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl30)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl30)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl31)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl31)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl32)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl32)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl33)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl33)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl34)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl34)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl35)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl35)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl36)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl36)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl37)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl37)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl38)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl38)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl39)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl39)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl40)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl40)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl41)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl41)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl42)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl42)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl43)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl43)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl44)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl44)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl45)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl45)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl46)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl46)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl47)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl47)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl48)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl48)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl49)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl49)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl50)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl50)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl51)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl51)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl52)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl52)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl53)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl53)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl54)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl54)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl55)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl55)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl56)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl56)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl57)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl57)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl58)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl58)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl59)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl59)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl60)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl60)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl61)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl61)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl62)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl62)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl63)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl63)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl64)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl64)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl65)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl65)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl66)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl66)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl67)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl67)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl68)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl68)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl69)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl69)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl70)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl70)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl71)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl71)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl72)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl72)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl73)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl73)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl74)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl74)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl75)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl75)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl76)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl76)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl77)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl77)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl78)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl78)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl79)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl79)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl80)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl80)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl81)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl81)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl82)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl82)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl83)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl83)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl84)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl84)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl85)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl85)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl86)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl86)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl87)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl87)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl88)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl88)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl89)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl89)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl90)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl90)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl91)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl91)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl92)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl92)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl93)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl93)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl94)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl94)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl95)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl95)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl96)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl96)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl97)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl97)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl98)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl98)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl99)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl99)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl100)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl100)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl101)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl101)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl102)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl102)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl103)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl103)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl104)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl104)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl105)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl105)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl106)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl106)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl107)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl107)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl108)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl108)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl109)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl109)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl110)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl110)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl111)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl111)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl112)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl112)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl113)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl113)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl114)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl114)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place.Pl115)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place.Pl115)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Place.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

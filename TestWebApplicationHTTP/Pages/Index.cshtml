@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    ViewData["AuthSwitch"] = Model.AuthSwitch;
+}
+
+<!DOCTYPE html>
+<html style="font-size: 14px;" lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Домашняя страница</title>
+    <link rel="stylesheet" href="~/css/nicepage.css" media="screen" asp-append-version="true">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" asp-append-version="true">
+</head>
+<body class="u-body u-xl-mode" data-lang="ru">
+    <section style="background-image: linear-gradient(rgba(45,84,41,0.63), rgba(5,150,48,0.33));">
+        <div class="text-center">
+            <h1 class="display-4">Приветствуем на нашем сайте</h1>
+            <p>Наша парковка находится по адресу - улица Мичурина, 1/2.</p>
+            <br />
+            <img src="~/images/main_parking.png"/>
+            <br />
+            <img src="~/images/earth_parking.png" />
+            <br />
+            <img src="~/images/parkingcorner.png" />
+            <br />
+            <img src="~/images/parkingmiddle.png" />
+            <br />
+            <img src="~/images/parkingfromroad.png" />
+        </div>
+    </section>
+</body>
+</html>

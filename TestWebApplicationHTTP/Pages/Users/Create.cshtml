@@ -1,0 +1,59 @@
+﻿@page
+@model TestWebApplicationHTTP.Pages.Users.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="User.Permissions" class="control-label"></label>
+                <input asp-for="User.Permissions" class="form-control" />
+                <span asp-validation-for="User.Permissions" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.Login" class="control-label"></label>
+                <input asp-for="User.Login" class="form-control" />
+                <span asp-validation-for="User.Login" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.Email" class="control-label"></label>
+                <input asp-for="User.Email" class="form-control" />
+                <span asp-validation-for="User.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.Password" class="control-label"></label>
+                <input asp-for="User.Password" class="form-control" />
+                <span asp-validation-for="User.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.LastLoginTime" class="control-label"></label>
+                <input asp-for="User.LastLoginTime" class="form-control" />
+                <span asp-validation-for="User.LastLoginTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.AccessExpiresTime" class="control-label"></label>
+                <input asp-for="User.AccessExpiresTime" class="form-control" />
+                <span asp-validation-for="User.AccessExpiresTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

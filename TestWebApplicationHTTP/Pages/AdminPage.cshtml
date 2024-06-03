@@ -1,0 +1,76 @@
+﻿@page
+@model TestWebApplicationHTTP.Pages.AdminPageModel
+@{
+}
+<!DOCTYPE html>
+<html style="font-size: 14px;" lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Администрирование</title>
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <meta name="generator" content="Nicepage 6.4.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Администрирование">
+    <meta property="og:type" content="website">
+</head>
+<body class="u-body u-xl-mode" data-lang="ru">
+    <form id="dateForm">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate">
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate">
+        <input type="submit" value="Submit">
+    </form>
+
+    <canvas id="chart"></canvas>
+
+    @section Scripts {
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#dateForm').submit(function (event) {
+                    event.preventDefault();
+
+                    var startDate = $('#startDate').val();
+                    var endDate = $('#endDate').val();
+
+                    $.get('/Controllers/ChartController/AdminPage', { startDate: startDate, endDate: endDate }, function (data) {
+                        var ctx = document.getElementById('chart').getContext('2d');
+                        var chart = new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels: data.map(x => x.date),
+                                datasets: [{
+                                    label: 'Average Parking Time',
+                                    data: data.map(x => x.parkingTime),
+                                    borderColor: 'rgba(75, 192, 192, 1)',
+                                    backgroundColor: 'rgba(75, 192, 192, 0.2)'
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    x: {
+                                        type: 'time',
+                                        time: {
+                                            unit: 'day'
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+    }
+</body>
+</html>

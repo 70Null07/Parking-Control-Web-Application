@@ -1,0 +1,103 @@
+﻿@page
+@model TestWebApplicationHTTP.Pages.Users.IndexModel
+
+@{
+    ViewData["Title"] = "Редактирование пользователей";
+    ViewData["AuthSwitch"] = "Профиль";
+}
+
+<!DOCTYPE html>
+<html style="font-size: 14px;" lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/css/nicepage.css" media="screen">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+</head>
+<body class="u-body u-xl-mode" data-lang="ru">
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <button onclick="location.href='https://parkingcontrolcomplex.ru/users'" class="u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-radius u-btn-1">Редактирование учетных данных</button>
+                </td>
+                <td>
+                    <button onclick="location.href='https://parkingcontrolcomplex.ru/places'" class="u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-radius u-btn-1">Редактирование загруженности парковки</button>
+                </td>
+                <td>
+                    <button onclick="location.href='https://parkingcontrolcomplex.ru/сharts'" class="u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-radius u-btn-1">Статистика по парковке</button>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <section style="background-image: linear-gradient(rgba(5,150,48,0.33), rgba(5,150,48,0.33));">
+        <h3>Редактирование пользователей</h3>
+
+        <p>
+            <a asp-page="Create">Создать нового пользователя</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Роль
+@*                         @Html.DisplayNameFor(model => model.Users[0].Permissions) *@
+                    </th>
+                    <th>
+                        Логин
+@*                         @Html.DisplayNameFor(model => model.Users[0].Login) *@
+                    </th>
+                    <th>
+                        Почта
+@*                         @Html.DisplayNameFor(model => model.Users[0].Email) *@
+                    </th>
+@*                     <th>
+                        @Html.DisplayNameFor(model => model.Users[0].Password)
+                    </th> *@
+                    <th>
+                        Время последнего входа
+@*                         @Html.DisplayNameFor(model => model.Users[0].LastLoginTime) *@
+                    </th>
+                    <th>
+                        Дата истечения доступа
+@*                         @Html.DisplayNameFor(model => model.Users[0].AccessExpiresTime) *@
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Users)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Permissions)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Login)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+@*                         <td>
+                            @Html.DisplayFor(modelItem => item.Password)
+                        </td> *@
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LastLoginTime)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AccessExpiresTime)
+                        </td>
+                        <td>
+                            <a asp-page="./Edit" asp-route-id="@item.ID">Изменить</a> |
+                            <a asp-page="./Details" asp-route-id="@item.ID">Детали</a> |
+                            <a asp-page="./Delete" asp-route-id="@item.ID">Удалить</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </section>
+</body>
+</html>

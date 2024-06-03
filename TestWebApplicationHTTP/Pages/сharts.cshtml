@@ -1,0 +1,60 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model TestWebApplicationHTTP.Pages.Chart1Model
+@{
+    ViewData["Title"] = "Трансляция";
+    ViewData["AuthSwitch"] = "Профиль";
+}
+
+<!DOCTYPE html>
+<html style="font-size: 14px;" lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Администрирование</title>
+    <link rel="stylesheet" href="~/css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="~/css/Схема.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <script src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+
+    <script src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <title>ColumnChart</title>
+
+    <meta name="generator" content="Nicepage 6.4.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Администрирование">
+    <meta property="og:type" content="website">
+</head>
+<body class="u-body u-xl-mode" data-lang="ru">
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <button onclick="location.href='https://parkingcontrolcomplex.ru/users'" class="u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-radius u-btn-1">Редактирование учетных данных</button>
+                </td>
+                <td>
+                    <button onclick="location.href='https://parkingcontrolcomplex.ru/places'" class="u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-radius u-btn-1">Редактирование загруженности парковки</button>
+                </td>
+                <td>
+                    <button onclick="location.href='https://parkingcontrolcomplex.ru/сharts'" class="u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-radius u-btn-1">Статистика по парковке</button>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <form method="post" id="dateForm">
+        <label for="startDate">Начальная дата:</label>
+        <input asp-for="StartDate" type="date" id="startDate" name="startDate">
+        <label for="endDate">Конечная дата:</label>
+        <input asp-for="EndDate" type="date" id="endDate" name="endDate">
+        <button asp-page-handler="ShowCharts" name="showCharts">Показать графики</button>
+        <div>@Html.Raw(Model.ChartJson)</div>
+        <br />
+        <div>@Html.Raw(Model.ChartJson2)</div>
+    </form>
+</body>
+</html>

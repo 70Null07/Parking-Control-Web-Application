@@ -1,0 +1,62 @@
+﻿@page
+@model TestWebApplicationHTTP.Pages.Users.DetailsModel
+
+@{
+    ViewData["Title"] = "Детали";
+    ViewData["AuthSwitch"] = "Профиль";
+}
+
+<h1>Детали</h1>
+
+<div>
+    <h4>Пользователь</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Роль
+@*             @Html.DisplayNameFor(model => model.User.Permissions) *@
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.User.Permissions)
+        </dd>
+        <dt class="col-sm-2">
+            Логин
+@*             @Html.DisplayNameFor(model => model.User.Login) *@
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.User.Login)
+        </dd>
+        <dt class="col-sm-2">
+            Электронная почта
+@*             @Html.DisplayNameFor(model => model.User.Email) *@
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>
+        <dt class="col-sm-2">
+            Пароль
+@*             @Html.DisplayNameFor(model => model.User.Password) *@
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.User.Password)
+        </dd>
+        <dt class="col-sm-2">
+            Время последнего входа
+@*             @Html.DisplayNameFor(model => model.User.LastLoginTime) *@
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.User.LastLoginTime)
+        </dd>
+        <dt class="col-sm-2">
+            Дата истечения доступа
+@*             @Html.DisplayNameFor(model => model.User.AccessExpiresTime) *@
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.User.AccessExpiresTime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.User.ID">Изменить</a> |
+    <a asp-page="./Index">Назад</a>
+</div>

@@ -1,0 +1,86 @@
+﻿@page
+@model TestWebApplicationHTTP.Pages.BroadcastModel
+@{
+    ViewData["Title"] = "Трансляция";
+    ViewData["AuthSwitch"] = Model.AuthSwitch;
+}
+
+<!DOCTYPE html>
+<html style="font-size: 14px;" lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Схема</title>
+    <link rel="stylesheet" href="~/css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="~/css/Схема.css" media="screen">
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+
+    <meta name="generator" content="Nicepage 6.4.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Схема">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+<body class="u-body u-xl-mode" data-lang="ru">
+    <section class="u-clearfix u-gradient u-section-1" id="sec-c76f">
+@*         <div id="output"></div> *@
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <label style="text-align:center; font-size: 14px; margin-top: 20px; font-palette:light;" class="u-image">Текущая загруженность - @Model.CurrentLoad</label>
+@*             <video controls muted="muted" id="Myvideo" class="u-image u-image-round u-radius u-image-1" src="https://parkingcontrolcomplex.ru:24000/video.ogg" type="video/ogg; codecs=theora" preload="auto" autoplay="autoplay">
+            </video> *@
+            <video controls muted="muted" id="Myvideo" class="u-image u-image-round u-radius u-image-1" src="https://parkingcontrolcomplex.ru:24000/cam.webm" type='video/webm; codecs="vp8, vorbis"' preload="auto" autoplay="autoplay">
+            </video>
+            <script>
+                document.getElementById('Myvideo').play();
+            </script>
+            <script>
+                var media = document.getElementById('Myvideo');
+
+                // Playing event
+                media.addEventListener("playing", function () {
+                    $("#output").html("Playing event triggered");
+                });
+
+                // Pause event
+                media.addEventListener("pause", function () {
+                    $("#output").html("Pause event triggered");
+                });
+
+                // Seeking event
+                media.addEventListener("seeking", function () {
+                    $("#output").html("Seeking event triggered");
+                });
+
+                // Volume changed event
+                media.addEventListener("volumechange", function (e) {
+                    $("#output").html("Volumechange event triggered");
+                });
+
+            </script>
+@*             <video muted="muted" id="video" class="u-image u-image-round u-radius u-image-1" src="https://parkingcontrolcomplex.ru/tmpcmatnn.wmv" preload="none" autoplay="autoplay" data-image-width="1059" data-image-height="629">
+
+            </video> *@
+
+@*             <video-js id="my_video_1" class="vjs-default-skin" controls preload="auto" width="640" height="268">
+                <source src="https://parkingcontrolcomplex.ru:24000/video.ogg" type="video/ogg">
+            </video-js>
+            <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+            <script src="https://parkingcontrolcomplex.ru/js/videojs-http-streaming.cjs.js"></script>
+            <script>
+                var player = videojs('my_video_1');
+            </script> *@
+
+
+            <a href="https://parkingcontrolcomplex.ru/scheme" class="u-btn u-btn-round u-button-style u-custom-color-1 u-radius u-btn-1">Схематичный вид</a>
+            <a href="https://parkingcontrolcomplex.ru/loadbroadcast" class="u-btn u-btn-round u-button-style u-custom-color-1 u-radius u-btn-2">Загруженность с камеры</a>
+        </div>
+    </section>
+
+</body>
+</html>

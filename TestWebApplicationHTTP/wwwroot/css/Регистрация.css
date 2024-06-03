@@ -1,0 +1,116 @@
+ .u-section-1 {
+  background-image: linear-gradient(100deg, rgba(45,84,41,0.63), rgba(5,150,48,0.33));
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 769px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 95px;
+  height: 95px;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.15);
+  margin: 27px auto 0;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 14px auto 0;
+}
+
+.u-section-1 .u-custom-html-1 {
+  height: auto;
+  min-height: 124px;
+  width: 447px;
+  margin: 0 auto;
+}
+
+.u-section-1 .u-form-1 {
+  height: 399px;
+  width: 377px;
+  margin: -18px auto 0;
+}
+
+.u-section-1 .u-input-1 {
+  height: 62px;
+  --radius: 14px;
+  box-shadow: 2px 2px 8px 0px rgba(128,128,128,1);
+}
+
+.u-section-1 .u-form-group-2 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-input-2 {
+  box-shadow: 2px 2px 8px 0px rgba(128,128,128,1);
+  height: 62px;
+  --radius: 14px;
+}
+
+.u-section-1 .u-input-3 {
+  height: 62px;
+  --radius: 14px;
+  box-shadow: 2px 2px 8px 0px rgba(128,128,128,1);
+}
+
+.u-section-1 .u-form-group-4 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-input-4 {
+  box-shadow: 2px 2px 8px 0px rgba(128,128,128,1);
+  height: 62px;
+  --radius: 14px;
+}
+
+.u-section-1 .u-btn-1 {
+  width: 100%;
+  --radius: 11px;
+  padding: 18px 0;
+}
+
+.u-section-1 .u-btn-2 {
+  --radius: 12px;
+  box-shadow: 2px 2px 8px 0px rgba(128,128,128,0.6);
+  background-image: none;
+  margin: -444px 195px 0 auto;
+  padding: 18px 30px 19px;
+}
+
+    .u-section-1 .u-btn-3 {
+        --radius: 12px;
+        box-shadow: 2px 2px 8px 0px rgba(128,128,128,0.6);
+        background-image: none;
+        margin: -140px 384px 93px 384px;
+        padding: 18px 46px 19px 45px;
+    }
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-btn-2 {
+    margin-right: 0;
+    border-style: solid;
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-form-1 {
+    margin-top: -124px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-top: 23px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-custom-html-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 340px;
+  }
+}

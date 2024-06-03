@@ -1,0 +1,605 @@
+﻿@page
+@model TestWebApplicationHTTP.Pages.Places.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Place</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Place.Id" />
+            <div class="form-group">
+                <label asp-for="Place.Pl1" class="control-label"></label>
+                <input asp-for="Place.Pl1" class="form-control" />
+                <span asp-validation-for="Place.Pl1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl2" class="control-label"></label>
+                <input asp-for="Place.Pl2" class="form-control" />
+                <span asp-validation-for="Place.Pl2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl3" class="control-label"></label>
+                <input asp-for="Place.Pl3" class="form-control" />
+                <span asp-validation-for="Place.Pl3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl4" class="control-label"></label>
+                <input asp-for="Place.Pl4" class="form-control" />
+                <span asp-validation-for="Place.Pl4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl5" class="control-label"></label>
+                <input asp-for="Place.Pl5" class="form-control" />
+                <span asp-validation-for="Place.Pl5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl6" class="control-label"></label>
+                <input asp-for="Place.Pl6" class="form-control" />
+                <span asp-validation-for="Place.Pl6" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl7" class="control-label"></label>
+                <input asp-for="Place.Pl7" class="form-control" />
+                <span asp-validation-for="Place.Pl7" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl8" class="control-label"></label>
+                <input asp-for="Place.Pl8" class="form-control" />
+                <span asp-validation-for="Place.Pl8" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl9" class="control-label"></label>
+                <input asp-for="Place.Pl9" class="form-control" />
+                <span asp-validation-for="Place.Pl9" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl10" class="control-label"></label>
+                <input asp-for="Place.Pl10" class="form-control" />
+                <span asp-validation-for="Place.Pl10" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl11" class="control-label"></label>
+                <input asp-for="Place.Pl11" class="form-control" />
+                <span asp-validation-for="Place.Pl11" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl12" class="control-label"></label>
+                <input asp-for="Place.Pl12" class="form-control" />
+                <span asp-validation-for="Place.Pl12" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl13" class="control-label"></label>
+                <input asp-for="Place.Pl13" class="form-control" />
+                <span asp-validation-for="Place.Pl13" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl14" class="control-label"></label>
+                <input asp-for="Place.Pl14" class="form-control" />
+                <span asp-validation-for="Place.Pl14" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl15" class="control-label"></label>
+                <input asp-for="Place.Pl15" class="form-control" />
+                <span asp-validation-for="Place.Pl15" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl16" class="control-label"></label>
+                <input asp-for="Place.Pl16" class="form-control" />
+                <span asp-validation-for="Place.Pl16" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl17" class="control-label"></label>
+                <input asp-for="Place.Pl17" class="form-control" />
+                <span asp-validation-for="Place.Pl17" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl18" class="control-label"></label>
+                <input asp-for="Place.Pl18" class="form-control" />
+                <span asp-validation-for="Place.Pl18" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl19" class="control-label"></label>
+                <input asp-for="Place.Pl19" class="form-control" />
+                <span asp-validation-for="Place.Pl19" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl20" class="control-label"></label>
+                <input asp-for="Place.Pl20" class="form-control" />
+                <span asp-validation-for="Place.Pl20" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl21" class="control-label"></label>
+                <input asp-for="Place.Pl21" class="form-control" />
+                <span asp-validation-for="Place.Pl21" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl22" class="control-label"></label>
+                <input asp-for="Place.Pl22" class="form-control" />
+                <span asp-validation-for="Place.Pl22" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl23" class="control-label"></label>
+                <input asp-for="Place.Pl23" class="form-control" />
+                <span asp-validation-for="Place.Pl23" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl24" class="control-label"></label>
+                <input asp-for="Place.Pl24" class="form-control" />
+                <span asp-validation-for="Place.Pl24" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl25" class="control-label"></label>
+                <input asp-for="Place.Pl25" class="form-control" />
+                <span asp-validation-for="Place.Pl25" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl26" class="control-label"></label>
+                <input asp-for="Place.Pl26" class="form-control" />
+                <span asp-validation-for="Place.Pl26" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl27" class="control-label"></label>
+                <input asp-for="Place.Pl27" class="form-control" />
+                <span asp-validation-for="Place.Pl27" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl28" class="control-label"></label>
+                <input asp-for="Place.Pl28" class="form-control" />
+                <span asp-validation-for="Place.Pl28" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl29" class="control-label"></label>
+                <input asp-for="Place.Pl29" class="form-control" />
+                <span asp-validation-for="Place.Pl29" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl30" class="control-label"></label>
+                <input asp-for="Place.Pl30" class="form-control" />
+                <span asp-validation-for="Place.Pl30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl31" class="control-label"></label>
+                <input asp-for="Place.Pl31" class="form-control" />
+                <span asp-validation-for="Place.Pl31" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl32" class="control-label"></label>
+                <input asp-for="Place.Pl32" class="form-control" />
+                <span asp-validation-for="Place.Pl32" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl33" class="control-label"></label>
+                <input asp-for="Place.Pl33" class="form-control" />
+                <span asp-validation-for="Place.Pl33" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl34" class="control-label"></label>
+                <input asp-for="Place.Pl34" class="form-control" />
+                <span asp-validation-for="Place.Pl34" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl35" class="control-label"></label>
+                <input asp-for="Place.Pl35" class="form-control" />
+                <span asp-validation-for="Place.Pl35" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl36" class="control-label"></label>
+                <input asp-for="Place.Pl36" class="form-control" />
+                <span asp-validation-for="Place.Pl36" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl37" class="control-label"></label>
+                <input asp-for="Place.Pl37" class="form-control" />
+                <span asp-validation-for="Place.Pl37" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl38" class="control-label"></label>
+                <input asp-for="Place.Pl38" class="form-control" />
+                <span asp-validation-for="Place.Pl38" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl39" class="control-label"></label>
+                <input asp-for="Place.Pl39" class="form-control" />
+                <span asp-validation-for="Place.Pl39" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl40" class="control-label"></label>
+                <input asp-for="Place.Pl40" class="form-control" />
+                <span asp-validation-for="Place.Pl40" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl41" class="control-label"></label>
+                <input asp-for="Place.Pl41" class="form-control" />
+                <span asp-validation-for="Place.Pl41" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl42" class="control-label"></label>
+                <input asp-for="Place.Pl42" class="form-control" />
+                <span asp-validation-for="Place.Pl42" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl43" class="control-label"></label>
+                <input asp-for="Place.Pl43" class="form-control" />
+                <span asp-validation-for="Place.Pl43" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl44" class="control-label"></label>
+                <input asp-for="Place.Pl44" class="form-control" />
+                <span asp-validation-for="Place.Pl44" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl45" class="control-label"></label>
+                <input asp-for="Place.Pl45" class="form-control" />
+                <span asp-validation-for="Place.Pl45" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl46" class="control-label"></label>
+                <input asp-for="Place.Pl46" class="form-control" />
+                <span asp-validation-for="Place.Pl46" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl47" class="control-label"></label>
+                <input asp-for="Place.Pl47" class="form-control" />
+                <span asp-validation-for="Place.Pl47" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl48" class="control-label"></label>
+                <input asp-for="Place.Pl48" class="form-control" />
+                <span asp-validation-for="Place.Pl48" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl49" class="control-label"></label>
+                <input asp-for="Place.Pl49" class="form-control" />
+                <span asp-validation-for="Place.Pl49" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl50" class="control-label"></label>
+                <input asp-for="Place.Pl50" class="form-control" />
+                <span asp-validation-for="Place.Pl50" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl51" class="control-label"></label>
+                <input asp-for="Place.Pl51" class="form-control" />
+                <span asp-validation-for="Place.Pl51" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl52" class="control-label"></label>
+                <input asp-for="Place.Pl52" class="form-control" />
+                <span asp-validation-for="Place.Pl52" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl53" class="control-label"></label>
+                <input asp-for="Place.Pl53" class="form-control" />
+                <span asp-validation-for="Place.Pl53" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl54" class="control-label"></label>
+                <input asp-for="Place.Pl54" class="form-control" />
+                <span asp-validation-for="Place.Pl54" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl55" class="control-label"></label>
+                <input asp-for="Place.Pl55" class="form-control" />
+                <span asp-validation-for="Place.Pl55" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl56" class="control-label"></label>
+                <input asp-for="Place.Pl56" class="form-control" />
+                <span asp-validation-for="Place.Pl56" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl57" class="control-label"></label>
+                <input asp-for="Place.Pl57" class="form-control" />
+                <span asp-validation-for="Place.Pl57" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl58" class="control-label"></label>
+                <input asp-for="Place.Pl58" class="form-control" />
+                <span asp-validation-for="Place.Pl58" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl59" class="control-label"></label>
+                <input asp-for="Place.Pl59" class="form-control" />
+                <span asp-validation-for="Place.Pl59" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl60" class="control-label"></label>
+                <input asp-for="Place.Pl60" class="form-control" />
+                <span asp-validation-for="Place.Pl60" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl61" class="control-label"></label>
+                <input asp-for="Place.Pl61" class="form-control" />
+                <span asp-validation-for="Place.Pl61" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl62" class="control-label"></label>
+                <input asp-for="Place.Pl62" class="form-control" />
+                <span asp-validation-for="Place.Pl62" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl63" class="control-label"></label>
+                <input asp-for="Place.Pl63" class="form-control" />
+                <span asp-validation-for="Place.Pl63" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl64" class="control-label"></label>
+                <input asp-for="Place.Pl64" class="form-control" />
+                <span asp-validation-for="Place.Pl64" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl65" class="control-label"></label>
+                <input asp-for="Place.Pl65" class="form-control" />
+                <span asp-validation-for="Place.Pl65" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl66" class="control-label"></label>
+                <input asp-for="Place.Pl66" class="form-control" />
+                <span asp-validation-for="Place.Pl66" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl67" class="control-label"></label>
+                <input asp-for="Place.Pl67" class="form-control" />
+                <span asp-validation-for="Place.Pl67" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl68" class="control-label"></label>
+                <input asp-for="Place.Pl68" class="form-control" />
+                <span asp-validation-for="Place.Pl68" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl69" class="control-label"></label>
+                <input asp-for="Place.Pl69" class="form-control" />
+                <span asp-validation-for="Place.Pl69" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl70" class="control-label"></label>
+                <input asp-for="Place.Pl70" class="form-control" />
+                <span asp-validation-for="Place.Pl70" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl71" class="control-label"></label>
+                <input asp-for="Place.Pl71" class="form-control" />
+                <span asp-validation-for="Place.Pl71" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl72" class="control-label"></label>
+                <input asp-for="Place.Pl72" class="form-control" />
+                <span asp-validation-for="Place.Pl72" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl73" class="control-label"></label>
+                <input asp-for="Place.Pl73" class="form-control" />
+                <span asp-validation-for="Place.Pl73" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl74" class="control-label"></label>
+                <input asp-for="Place.Pl74" class="form-control" />
+                <span asp-validation-for="Place.Pl74" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl75" class="control-label"></label>
+                <input asp-for="Place.Pl75" class="form-control" />
+                <span asp-validation-for="Place.Pl75" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl76" class="control-label"></label>
+                <input asp-for="Place.Pl76" class="form-control" />
+                <span asp-validation-for="Place.Pl76" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl77" class="control-label"></label>
+                <input asp-for="Place.Pl77" class="form-control" />
+                <span asp-validation-for="Place.Pl77" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl78" class="control-label"></label>
+                <input asp-for="Place.Pl78" class="form-control" />
+                <span asp-validation-for="Place.Pl78" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl79" class="control-label"></label>
+                <input asp-for="Place.Pl79" class="form-control" />
+                <span asp-validation-for="Place.Pl79" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl80" class="control-label"></label>
+                <input asp-for="Place.Pl80" class="form-control" />
+                <span asp-validation-for="Place.Pl80" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl81" class="control-label"></label>
+                <input asp-for="Place.Pl81" class="form-control" />
+                <span asp-validation-for="Place.Pl81" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl82" class="control-label"></label>
+                <input asp-for="Place.Pl82" class="form-control" />
+                <span asp-validation-for="Place.Pl82" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl83" class="control-label"></label>
+                <input asp-for="Place.Pl83" class="form-control" />
+                <span asp-validation-for="Place.Pl83" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl84" class="control-label"></label>
+                <input asp-for="Place.Pl84" class="form-control" />
+                <span asp-validation-for="Place.Pl84" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl85" class="control-label"></label>
+                <input asp-for="Place.Pl85" class="form-control" />
+                <span asp-validation-for="Place.Pl85" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl86" class="control-label"></label>
+                <input asp-for="Place.Pl86" class="form-control" />
+                <span asp-validation-for="Place.Pl86" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl87" class="control-label"></label>
+                <input asp-for="Place.Pl87" class="form-control" />
+                <span asp-validation-for="Place.Pl87" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl88" class="control-label"></label>
+                <input asp-for="Place.Pl88" class="form-control" />
+                <span asp-validation-for="Place.Pl88" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl89" class="control-label"></label>
+                <input asp-for="Place.Pl89" class="form-control" />
+                <span asp-validation-for="Place.Pl89" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl90" class="control-label"></label>
+                <input asp-for="Place.Pl90" class="form-control" />
+                <span asp-validation-for="Place.Pl90" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl91" class="control-label"></label>
+                <input asp-for="Place.Pl91" class="form-control" />
+                <span asp-validation-for="Place.Pl91" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl92" class="control-label"></label>
+                <input asp-for="Place.Pl92" class="form-control" />
+                <span asp-validation-for="Place.Pl92" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl93" class="control-label"></label>
+                <input asp-for="Place.Pl93" class="form-control" />
+                <span asp-validation-for="Place.Pl93" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl94" class="control-label"></label>
+                <input asp-for="Place.Pl94" class="form-control" />
+                <span asp-validation-for="Place.Pl94" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl95" class="control-label"></label>
+                <input asp-for="Place.Pl95" class="form-control" />
+                <span asp-validation-for="Place.Pl95" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl96" class="control-label"></label>
+                <input asp-for="Place.Pl96" class="form-control" />
+                <span asp-validation-for="Place.Pl96" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl97" class="control-label"></label>
+                <input asp-for="Place.Pl97" class="form-control" />
+                <span asp-validation-for="Place.Pl97" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl98" class="control-label"></label>
+                <input asp-for="Place.Pl98" class="form-control" />
+                <span asp-validation-for="Place.Pl98" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl99" class="control-label"></label>
+                <input asp-for="Place.Pl99" class="form-control" />
+                <span asp-validation-for="Place.Pl99" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl100" class="control-label"></label>
+                <input asp-for="Place.Pl100" class="form-control" />
+                <span asp-validation-for="Place.Pl100" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl101" class="control-label"></label>
+                <input asp-for="Place.Pl101" class="form-control" />
+                <span asp-validation-for="Place.Pl101" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl102" class="control-label"></label>
+                <input asp-for="Place.Pl102" class="form-control" />
+                <span asp-validation-for="Place.Pl102" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl103" class="control-label"></label>
+                <input asp-for="Place.Pl103" class="form-control" />
+                <span asp-validation-for="Place.Pl103" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl104" class="control-label"></label>
+                <input asp-for="Place.Pl104" class="form-control" />
+                <span asp-validation-for="Place.Pl104" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl105" class="control-label"></label>
+                <input asp-for="Place.Pl105" class="form-control" />
+                <span asp-validation-for="Place.Pl105" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl106" class="control-label"></label>
+                <input asp-for="Place.Pl106" class="form-control" />
+                <span asp-validation-for="Place.Pl106" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl107" class="control-label"></label>
+                <input asp-for="Place.Pl107" class="form-control" />
+                <span asp-validation-for="Place.Pl107" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl108" class="control-label"></label>
+                <input asp-for="Place.Pl108" class="form-control" />
+                <span asp-validation-for="Place.Pl108" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl109" class="control-label"></label>
+                <input asp-for="Place.Pl109" class="form-control" />
+                <span asp-validation-for="Place.Pl109" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl110" class="control-label"></label>
+                <input asp-for="Place.Pl110" class="form-control" />
+                <span asp-validation-for="Place.Pl110" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl111" class="control-label"></label>
+                <input asp-for="Place.Pl111" class="form-control" />
+                <span asp-validation-for="Place.Pl111" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl112" class="control-label"></label>
+                <input asp-for="Place.Pl112" class="form-control" />
+                <span asp-validation-for="Place.Pl112" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl113" class="control-label"></label>
+                <input asp-for="Place.Pl113" class="form-control" />
+                <span asp-validation-for="Place.Pl113" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl114" class="control-label"></label>
+                <input asp-for="Place.Pl114" class="form-control" />
+                <span asp-validation-for="Place.Pl114" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Place.Pl115" class="control-label"></label>
+                <input asp-for="Place.Pl115" class="form-control" />
+                <span asp-validation-for="Place.Pl115" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

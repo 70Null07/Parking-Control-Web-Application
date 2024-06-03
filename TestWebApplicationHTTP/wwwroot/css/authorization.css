@@ -1,0 +1,96 @@
+ .u-section-1 {
+  background-image: linear-gradient(to right, rgba(5,150,48,0.33), rgba(45,84,41,0.63));
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 771px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 95px;
+  height: 95px;
+  --radius: 50px;
+  margin: 27px auto 0;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 20px auto 0;
+}
+
+.u-section-1 .u-custom-html-1 {
+  height: auto;
+  min-height: 124px;
+  width: 432px;
+  margin: -9px auto 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 297px;
+  width: 347px;
+  margin: -27px auto 0;
+}
+
+.u-section-1 .u-input-1 {
+  height: 62px;
+  --radius: 14px;
+}
+
+.u-section-1 .u-input-2 {
+  height: 62px;
+  --radius: 14px;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  --radius: 11px;
+  width: 100%;
+  padding: 18px 0;
+}
+
+.u-section-1 .u-btn-2 {
+  background-image: none;
+  border-style: solid;
+  margin: 0 auto 0 354px;
+  padding: 0;
+}
+
+.u-section-1 .u-btn-3 {
+  background-image: none;
+  border-style: solid;
+  margin: -27px 354px 60px auto;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-form-1 {
+    width: 432px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-left: 154px;
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-right: 154px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-btn-2 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-btn-3 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-custom-html-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 340px;
+  }
+}
